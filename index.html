@@ -10,13 +10,13 @@
 		<!-- change font -->
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,600,800' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 		<header>
-			<div class="container">
-				<h1 class="logo"><a href="index.html">Chloe Louise</a></h1>
+			<div class="container clearfix">
+				<h1 class="logo"><a href="index.html">CHLOE LOUISE</a></h1>
 				<nav>
 					<ul>
 						<li><a href="#">About</a></li>
@@ -31,35 +31,81 @@
 
 		<section>
 			<div id="carousel"></div>
+			<img class="main" src="images/running.png" alt="running">
 		</section>	
 
-		<section class="container">
-			<div>
-				<h2>About</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<img src="#" alt="about-image">
+		<section class="container clearfix">
+			<div class="content">
+			<article class="info">
+					<img class="right" src="images/about.png" alt="about-image">
+
+					<h2>About</h2>
+					<p>My name is Chloe and I’m a London-based personal trainer, specializing in wellness and nutrition.</p>
+
+					<p>Having worked in PR since graduating university, in 2017 I qualified as a personal trainer and nutritionist. I decided to trade in the dresses for gym gear full time and I haven’t looked back since. I understand that fitting in exercise around full-time work and commitments can sometimes seem impossible. My method is to create challenging and enjoyable workouts for people of all levels that fit in around your day-to-day life.</p>
+
+					<p>Because getting fit shouldn’t be about sacrifice.</p>
+			</article>
 			</div>
 
-			<div>
+			<div class="content">
+				<img class="left" src="images/session.png" alt="info-image">
 				<h2>Session Info</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<img src="#" alt="info-image">
+				<p>Each workout is tailored to the individual and based on many disciplines. My approach utilizes the dynamics of bodyweight training, combined with the principles of yoga and resistance training. Services include HIIT, strength training, weight loss, functional training, circuits and boxing.</p>
+				<p>As a qualified nutritionist, I take a holistic approach to your training and will work with you to put together a training and nutrition plan based on your goals.</p>
+				<p>Interested? Get in touch for a free consultation</p>
+				<span class="cta">Get in Touch</span>
+				<span class="cta">See Prices</span>
 			</div>
 
-			<div>
+			<div class="content">
+				<p class="table-text">Prices below based on an hour session unless stated otherwise</p>
+				<table>
+					<thead>
+						<tr>
+							<th scope="col">Session Type</th>
+							<th scope="col">Price</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Introductory 90 minute session</td>
+							<td>50</td>
+						</tr>
+						<tr>
+							<td>5 Sessions</td>
+							<td>225 (45 / session)</td>
+						</tr>
+						<tr>
+							<td>10 Sessions</td>
+							<td>400 (40 / session)</td>
+						</tr>
+						<tr>
+							<td>15 Sessions</td>
+							<td>525 (35 / session)</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="table-text">Want to train with a friend? No problem. For group training prices please call for a quote.</p>
+			</div>
+
+			<div class="content">
+				<img class="right" src="images/testimonials.png" alt="testimonials-image">
 				<h2>Testimonials</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-				<img src="#" alt="testimonials-image">
+				<p>“Chloe’s method changed not only my body but also my attitude towards exercise. I lost 3 stone and gained a new love of working out”</p>
+				<p>“Chloe is a first class personal trainer. I worked with her for four months and in that time I definitely noticed a change in my overall strength and energy levels”</p>
+				<!-- <p>“She’s the most down-to-earth PT I’ve ever worked with. She’ll kick your a** for an hour, and then drink wine with you after”</p> -->
+				<p>“What can I say? Chloe understood my strengths and weaknesses from day one and worked with me to achieve a level of fitness I never thought I could. Thank goodness for her!”</p>
 			</div>	
 
-			<div>
+			<div class="content">
+				<img class="left" src="images/contact.png" alt="contact-image">
 				<h2>Contact</h2>
 				<ul>
-					<li>Email</li>
-					<li>Phone</li>
+					<li>Email: chloe.louise.pt@gmail.com</li>
+					<li>Phone: 07900 105 300</li>
 					<li>Sign Up</li>
 				</ul>
-				<img src="#" alt="contact-image">
 			</div>	
 		</section>
 
@@ -69,7 +115,7 @@
 		</section>	
 
 		<footer>
-			<h1 class="logo">Chloe Louise</h1>
+			<h2 class="logo">CHLOE LOUISE</h2>
 			<ul>
 				<li><a href="#"><img src="#" alt="Twitter logo"></a></li>
 				<li><a href="#"><img src="#" alt="Facebook logo"></a></li>
