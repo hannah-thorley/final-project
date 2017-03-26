@@ -36,13 +36,15 @@ body {
 header {
 	padding: 1em 0;
 	background-color: white;
+/*	position: sticky;*/
 }
 
 h1 {
 	display: inline-block;
 	margin: 0;
-	font-size: 1.2rem;
+	font-size: 1.5rem;
 	padding-left: 1em;
+	letter-spacing: 0.3em;
 }
 
 header nav {
@@ -54,6 +56,8 @@ header li {
 	display: inline-block;
 	margin: 0 0.3em;
 	padding-right: 1em;
+	font-size: 1.1rem;
+	text-transform: uppercase;
 }
 
 header ul {
@@ -65,47 +69,125 @@ header a {
 	text-decoration: none;
 }
 
+a {
+	color: black;
+	text-decoration: none;
+}
+
+.copyright a {
+	color: white;
+	text-decoration: none;
+}
+
+a:hover {
+	cursor: pointer;
+}
+
+
+/*******************
+  CAROUSEL SETUP
+*******************/
+
+.hero-carousel {
+  width: 93%;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.hero-carousel div {
+  background-color: white;
+  text-align: center;
+}
+
+.hero-carousel img {
+	width: 100%;
+	height: 768px;
+}
+
+
+
 /*******************
   BODY SETUP
 *******************/
 
 
 .content {
-	padding: 4em 1em;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-bottom: 2em;
+	padding-top: 2em;
+/*	padding: 4em 1em;*/
 	margin: 5em 0;
 	background-color: white;
 	width: 100%;
+	height: 23em;
+}
+
+.content-table {
+	padding: 4em 1em;
+/*	margin: 5em 0;*/
+	background-color: white;
+	width: 100%;
+	height: 550px;	
+	display: none;
+}
+
+.content-contact {
+	padding-left: 2em;
+	padding-right: 1em;
+	padding-bottom: 2em;
+	padding-top: 2em;
+	margin: 5em 0;
+	background-color: white;
+	width: 100%;
+	height: 20em;	
+}
+
+.content-instagram {
+	padding-left: 2em;
+	padding-right: 1em;
+	padding-bottom: 2em;
+	padding-top: 2em;
+	margin: 5em 0;
+	background-color: #D0D8E8;
+	width: 100%;
+	height: 20em;
+	text-align: center;
+	color: white;
+	text-transform: uppercase;	
+}
+
+.content-contact li {
+	padding: 1.5em;
 }
 
 .content img {
 	padding: 2em;
-/*	width: 30%;*/
+	vertical-align: middle;
 }
 
 .content p {
 	padding: 0.5em 0;
 }
 
-h2 {
-	padding: 0.5em 0;
-	font-size: 1.2em;
-	text-transform: uppercase;
+.above-cta {
+	margin-bottom: 1.3em;
 }
 
+h2 {
+	padding-bottom: 1em;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	letter-spacing: 0.3em;
+}
+
+
 .right {
-/*	width: 30%;
-	margin-top: 2%;
-	margin-left:0;
-	margin-right: 4%;*/
 	display: block;
 	float:right;
 }
 
 .left {
-/*	width: 30%;
-	margin-top: 2%;
-	margin-left: 4%;
-	margin-right: 0;*/
 	display: block;
 	float: left;
 }
@@ -115,14 +197,19 @@ body {
 }
 
 .cta {
-	margin: 0 0.3em;
+	margin: 0 2em;
 	text-decoration: none;
 	padding: 0.75em;
 	border-radius: 2px;
 	border: 1px solid grey;
 	border-bottom: 3px solid #999999;
 	background-color: #F3F5F9;
+	float: left;
+	width: 20%;
+	text-align: center;
+	cursor: pointer;
 }
+
 
 /*******************
   TABLE SETUP
@@ -147,6 +234,16 @@ td {
 	margin: 1em 0;
 }
 
+/*******************
+  INSTA IMAGE SETUP
+*******************/
+
+.instagram-feed img {
+	width: 20%;
+	float: left;
+	padding: 0.5em;
+}
+
 
 /*******************
   FOOTER SETUP
@@ -159,10 +256,23 @@ footer {
 	clear: both;
 }
 
-footer li {
+/*footer li {
 	display: inline-block;
 	margin: 0 0.3em;
-	padding: 1em;
+	padding: 3em;
+}*/
+
+.copyright {
+	font-size: 0.7em;
+}
+
+.fa {
+	font-size: 2em;
+	display: inline-block;
+	color: white;
+	margin: 0 1em;
+	text-align: center;
+	vertical-align: bottom;
 }
 
 

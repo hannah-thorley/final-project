@@ -9,7 +9,10 @@
 		
 		<!-- change font -->
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,300,600,800' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="./css/slick-theme.css">
+  		<link rel="stylesheet" href="./css/slick.css">
 		<link rel="stylesheet" href="css/styles.css">
 </head>
 
@@ -19,10 +22,10 @@
 				<h1 class="logo"><a href="index.html">CHLOE LOUISE</a></h1>
 				<nav>
 					<ul>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Contact</a></li>
-						<li><a href="#">Session Info</a></li>
-						<li><a href="#">Testimonials</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#contact">Contact</a></li>
+						<li><a href="#session-info">Session Info</a></li>
+						<li><a href="#testimonials">Testimonials</a></li>
 						<li><a href="#">Blog</a></li>
 					</ul>
 				</nav>
@@ -30,35 +33,36 @@
 		</header>
 
 		<section>
-			<div id="carousel"></div>
-			<img class="main" src="images/running.png" alt="running">
+<!-- 			<img class="main" src="images/running-4.jpg" alt="running"> -->
+			  <div class="hero-carousel">
+			    <div><img src="images/running-4.jpg"></div>
+			    <div><img src="images/train.jpg"></div>
+			    <div><img src="images/yoga-3.jpg"></div>
+			  </div>
 		</section>	
 
 		<section class="container clearfix">
-			<div class="content">
-			<article class="info">
+			<div class="content" id="about">
 					<img class="right" src="images/about.png" alt="about-image">
-
 					<h2>About</h2>
 					<p>My name is Chloe and I’m a London-based personal trainer, specializing in wellness and nutrition.</p>
 
 					<p>Having worked in PR since graduating university, in 2017 I qualified as a personal trainer and nutritionist. I decided to trade in the dresses for gym gear full time and I haven’t looked back since. I understand that fitting in exercise around full-time work and commitments can sometimes seem impossible. My method is to create challenging and enjoyable workouts for people of all levels that fit in around your day-to-day life.</p>
-
-					<p>Because getting fit shouldn’t be about sacrifice.</p>
-			</article>
+					<br>
+					<p><i>Because getting fit shouldn’t be about sacrifice.</i></p>
 			</div>
 
-			<div class="content">
+			<div class="content" id="session-info">
 				<img class="left" src="images/session.png" alt="info-image">
 				<h2>Session Info</h2>
 				<p>Each workout is tailored to the individual and based on many disciplines. My approach utilizes the dynamics of bodyweight training, combined with the principles of yoga and resistance training. Services include HIIT, strength training, weight loss, functional training, circuits and boxing.</p>
 				<p>As a qualified nutritionist, I take a holistic approach to your training and will work with you to put together a training and nutrition plan based on your goals.</p>
-				<p>Interested? Get in touch for a free consultation</p>
-				<span class="cta">Get in Touch</span>
-				<span class="cta">See Prices</span>
+				<p class="above-cta">Interested? Get in touch for a free consultation</p>
+				<span class="cta"><a href="#contact">Get in Touch</a></span>
+				<span class="cta" id="prices-button">See Prices</span>
 			</div>
 
-			<div class="content">
+			<div class="content-table" id="show-this-on-click">
 				<p class="table-text">Prices below based on an hour session unless stated otherwise</p>
 				<table>
 					<thead>
@@ -70,35 +74,35 @@
 					<tbody>
 						<tr>
 							<td>Introductory 90 minute session</td>
-							<td>50</td>
+							<td>&pound;50</td>
 						</tr>
 						<tr>
 							<td>5 Sessions</td>
-							<td>225 (45 / session)</td>
+							<td>&pound;225 (&pound;45 / session)</td>
 						</tr>
 						<tr>
 							<td>10 Sessions</td>
-							<td>400 (40 / session)</td>
+							<td>&pound;400 (&pound;40 / session)</td>
 						</tr>
 						<tr>
 							<td>15 Sessions</td>
-							<td>525 (35 / session)</td>
+							<td>&pound;525 (&pound;35 / session)</td>
 						</tr>
 					</tbody>
 				</table>
 				<p class="table-text">Want to train with a friend? No problem. For group training prices please call for a quote.</p>
 			</div>
 
-			<div class="content">
+			<div class="content" id="testimonials">
 				<img class="right" src="images/testimonials.png" alt="testimonials-image">
 				<h2>Testimonials</h2>
 				<p>“Chloe’s method changed not only my body but also my attitude towards exercise. I lost 3 stone and gained a new love of working out”</p>
 				<p>“Chloe is a first class personal trainer. I worked with her for four months and in that time I definitely noticed a change in my overall strength and energy levels”</p>
-				<!-- <p>“She’s the most down-to-earth PT I’ve ever worked with. She’ll kick your a** for an hour, and then drink wine with you after”</p> -->
+				<p>“She’s the most down-to-earth PT I’ve ever worked with. It's so refreshing to work with someone who understands you have a life outside the gym!”</p>
 				<p>“What can I say? Chloe understood my strengths and weaknesses from day one and worked with me to achieve a level of fitness I never thought I could. Thank goodness for her!”</p>
 			</div>	
 
-			<div class="content">
+			<div class="content-contact" id="contact">
 				<img class="left" src="images/contact.png" alt="contact-image">
 				<h2>Contact</h2>
 				<ul>
@@ -110,22 +114,32 @@
 		</section>
 
 
-		<section>
-			<div id="instagram-feed"></div>
+		<section class="instagram-feed">
+			<div class="content-instagram">
+			<span>Follow me on Instagram</span>
+<!-- 			<i id="instagram" class="fa fa-instagram"></i> -->
+			<div>
+			<img src="https://scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/17267341_1969268303293444_6015190036935344128_n.jpg">
+			<img src="https://scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/15048248_575234659336020_4054934875340275712_n.jpg">
+			<img src="https://scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/15876837_402753793396059_8512055758202863616_n.jpg">
+			<img src="https://scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/14540515_698162997000277_5520275556643373056_n.jpg">
+			<img src="https://scontent-lht6-1.cdninstagram.com/t51.2885-15/e35/17077090_1559194144109285_7237647538805800960_n.jpg">
+			</div>
+			</div>
 		</section>	
 
 		<footer>
 			<h2 class="logo">CHLOE LOUISE</h2>
-			<ul>
-				<li><a href="#"><img src="#" alt="Twitter logo"></a></li>
-				<li><a href="#"><img src="#" alt="Facebook logo"></a></li>
-				<li><a href="#"><img src="#" alt="Instagram logo"></a></li>
-			</ul>
-			<p class="copyright">Copyright 2017 | <a href="#">Contact</a></p>
+			<i id="facebook" class="fa fa-facebook-square"></i>
+			<i id="twitter" class="fa fa-twitter"></i>
+			<i id="instagram" class="fa fa-instagram"></i>
+			<p class="copyright">&copy;Copyright 2017 | <a href="#">Contact</a></p>
 		</footer>
 
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script type="text/javascript" src="js/instafeed.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
