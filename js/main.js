@@ -30,25 +30,32 @@ $(document).ready(function() {
     $('.readless-2').hide();
     $('.readmore-2').show();
   });
+  
+  $('#hamburger').on('click', function () {
+    $('header nav').slideToggle()
+  });
 
   $('#about').mouseenter(function(){
   	$('#about').fadeTo('fast', 1);
   });
 
     $('#session-info').mouseenter(function(){
-  	$('#session-info').fadeTo('fast', 1);
-  });
+	  	$('#session-info').fadeTo('fast', 1);
+	  });
 
     $('#testimonials').mouseenter(function(){
-  	$('#testimonials').fadeTo('fast', 1);
-  });
+	  	$('#testimonials').fadeTo('fast', 1);
+	  });
 
     $('#contact').mouseenter(function(){
-  	$('#contact').fadeTo('fast', 1);
-  });
+	  	$('#contact').fadeTo('fast', 1);
+	  });
 
-$(function(){
-	$('.hero-carousel').slick()
-});
+  	$('.hero-carousel').slick({
+		slidesToShow: 1,
+	  	slidesToScroll: 1,
+	  	autoplay: true,
+	  	autoplaySpeed: 2000,
+	});
 
 });
