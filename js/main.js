@@ -35,27 +35,27 @@ $(document).ready(function() {
     $('header nav').slideToggle()
   });
 
-  $('#about').mouseenter(function(){
-  	$('#about').fadeTo('fast', 1);
+  $('.content-fade').waypoint(function() {
+    $(this.element).addClass('is-visible'); 
+  }, {
+    offset: '75%'
   });
 
-    $('#session-info').mouseenter(function(){
-	  	$('#session-info').fadeTo('fast', 1);
-	  });
+  $('header nav .scroll').on('click', function(e) {
+    e.preventDefault();
 
-    $('#testimonials').mouseenter(function(){
-	  	$('#testimonials').fadeTo('fast', 1);
-	  });
+    var target = $(this).attr('href');
 
-    $('#contact').mouseenter(function(){
-	  	$('#contact').fadeTo('fast', 1);
-	  });
+    $('html, body').animate({
+      scrollTop: $(target).offset().top
+    }, 800);
+  });
 
   	$('.hero-carousel').slick({
 		slidesToShow: 1,
 	  	slidesToScroll: 1,
 	  	autoplay: true,
-	  	autoplaySpeed: 2000,
+	  	autoplaySpeed: 1800,
 	});
 
 });
