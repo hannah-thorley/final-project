@@ -254,7 +254,7 @@ td {
 .instagram-feed img {
 	width: 16.666666666666667%;
 	float: left;
-	padding: 0.5em;
+	padding: 0.5rem;
 }
 
 .instagram-feed img:hover {
@@ -264,7 +264,7 @@ td {
 
 .content-instagram {
 	width: 100%;
-	padding: 2em;
+	padding: 1rem;
 	margin: 5rem 0;
 	background-color: #D0D8E8;
 	text-align: center;
@@ -558,13 +558,33 @@ h3 {
 	h1 {
 		font-size: 1.3rem;
 	}
-	.fa {
-		font-size: 1.5rem;
+	#contact .fa {
+		font-size: 1.2rem;
+	}
+	.fa-bars {
+		color: black;
 	}
 	.content-fade {
 		opacity: 1;
 	}
 }
 
+@media screen and (max-width: 350px) {
+	.hero-carousel {
+		display: none;
+	}
+	h1 {
+		font-size: 1rem;
+	}
+	#contact .fa {
+		font-size: 1rem;
+	}
+	.fa-bars {
+		color: black;
+	}
+	.content-fade {
+		opacity: 1;
+	}	
+}
 
 
